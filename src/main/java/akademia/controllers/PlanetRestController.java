@@ -21,7 +21,7 @@ public class PlanetRestController {
     public List<Planet> getAllPlanets(){
         return planetService.getAllPlanets();
     }
-    @PostMapping
+    @PostMapping("/planets")
     public Planet addPlanet(@RequestBody Planet planet) {
         return planetService.addPlanet(planet);
     }
