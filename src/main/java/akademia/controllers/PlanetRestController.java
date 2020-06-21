@@ -3,9 +3,8 @@ package akademia.controllers;
 
 import akademia.models.Planet;
 import akademia.services.PlanetService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,6 +20,10 @@ public class PlanetRestController {
     @GetMapping("/planets")
     public List<Planet> getAllPlanets(){
         return planetService.getAllPlanets();
+    }
+    @PostMapping
+    public Planet addPlanet(@RequestBody Planet planet) {
+        return planetService.addPlanet(planet);
     }
 
 }
