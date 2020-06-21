@@ -22,7 +22,7 @@ public class PlanetRestController {
         return planetService.getAllPlanets();
     }
     @PostMapping
-    public Planet addCar(@RequestBody Planet planet) {
+    public Planet addPlanet(@RequestBody Planet planet) {
         return planetService.addPlanet(planet);
     }
 
