@@ -4,7 +4,7 @@ import akademia.models.Planet;
 
 public class Utils {
 
-    public Double OlympicPool (Planet planet) {
+    public Double olympicPool (Planet planet) {
         double poolDistance = 50;
         return planet.getDistance() / poolDistance;
 
