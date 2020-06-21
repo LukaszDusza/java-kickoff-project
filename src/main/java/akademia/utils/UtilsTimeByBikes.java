@@ -2,7 +2,7 @@ package akademia.utils;
 
 import akademia.models.Planet;
 
-public class Utils_TimeByBikes extends Planet {
+public class UtilsTimeByBikes extends Planet {
 
      public double distanceByBikes(Planet planet) {
 
