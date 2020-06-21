@@ -1,6 +1,12 @@
 package akademia.utils;
 
+import akademia.models.Planet;
+
 public class Utils {
 
-    public Long OlympicPool
+    public Double OlympicPool (Planet planet) {
+        double poolDistance = 25;
+        return planet.getDistance() / poolDistance;
+
+    }
 }
