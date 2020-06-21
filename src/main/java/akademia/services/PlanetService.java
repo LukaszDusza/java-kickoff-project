@@ -15,7 +15,6 @@ public class PlanetService {
         this.planetRepository = planetRepository;
     }
 
-    @GetMapping("/planets")
     public List<Planet> getAllPlanets() {
         return planetRepository.findAll();
     }
