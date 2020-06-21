@@ -3,8 +3,8 @@ package akademia.utils;
 import akademia.models.Planet;
 
 public class Utils {
-  public Double  crocodileLength (Planet planet){
-    final double  crocodile= 4.37 ;
-    return planet.getDistance()/crocodile;
+  public long  crocodileLength (Planet planet){
+    final double crocodile= 4.37;
+    return (long) (planet.getDistance()/crocodile);
   }
 }
