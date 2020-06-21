@@ -8,13 +8,18 @@ import java.util.List;
 
 @Service
 public class PlanetService {
-    private final PlanetRepository planetRepository;
+  private final PlanetRepository planetRepository;
 
-    public PlanetService(PlanetRepository planetRepository) {
-        this.planetRepository = planetRepository;
-    }
+  public PlanetService(PlanetRepository planetRepository) {
+    this.planetRepository = planetRepository;
+  }
 
-    public List<Planet> getAllPlanets() {
-        return planetRepository.findAll();
-    }
+  public List<Planet> getAllPlanets() {
+    return planetRepository.findAll();
+  }
+
+  public List<Planet> getPlanetsByDistance() {
+    return planetRepository.getPlanetsByDistance();
+
+  }
 }
