@@ -3,21 +3,18 @@ package akademia.services;
 import akademia.models.Planet;
 import akademia.repository.PlanetRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 
-import java.util.Optional;
+import java.util.List;
 
 @Service
 public class PlanetService {
-    private PlanetRepository planetRepository;
+    private final PlanetRepository planetRepository;
 
     public PlanetService(PlanetRepository planetRepository) {
         this.planetRepository = planetRepository;
     }
 
-
-    public Optional<Planet> getPlanetByID (long id){
-        return planetRepository.findById(id);
+    public List<Planet> getAllPlanets() {
+        return planetRepository.findAll();
     }
 }
