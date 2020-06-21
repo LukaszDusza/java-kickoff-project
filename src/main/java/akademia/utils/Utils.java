@@ -1,7 +1,10 @@
 package akademia.utils;
+// autor Maciej Żelechowski
+import akademia.models.Planet;
 
 public class Utils {
-  //wysylam tylko dla testu GITA//
-  //update v2
+  public Double  crocodileLength (Planet planet){
+    final double  crocodile= 4.37 ;
+    return planet.getDistance()/crocodile;
+  }
 }
-K
