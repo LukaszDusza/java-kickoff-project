@@ -17,7 +17,7 @@ public class PlanetService {
     }
 
 
-    public Optional<Planet> getPlanetByID (@PathVariable(value = "id") long id){
+    public Optional<Planet> getPlanetByID (long id){
         return planetRepository.findById(id);
     }
 }
