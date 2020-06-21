@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>kick off app</title>
-</head>
+<head th:replace="header :: head"></head>
 <body>
-<div>PLANETY</div>
-<div th:replace="table :: table"></div>
+<div class="container">
+    <div class="row w-100">
+<div class="col-sm-12" th:replace="table :: table"></div>
+
+    </div>
+</div>
 </body>
 </html>

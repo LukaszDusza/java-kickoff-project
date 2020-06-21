@@ -12,6 +12,23 @@
         </tr>
         </thead>
 
+        <tbody>
+        <tr th:each="s: ${planets}">
+            <td th:text="${s.getName()}"></td>
+            <td th:text="${s.getDistance()}"></td>
+            <td th:text="${s.getDescription()}"></td>
+            <td >
+                <img th:src="@{${s.getPhotoUrl()}}" style="width: 100px; height: auto"/>
+            </td>
+            <td>
+                <form action="/delete" method="post">
+                    <input hidden name="id" th:value="${s.getId()}">
+                    <button type="submit" class="btn btn-danger btn-sm pt-0 pb-0">delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+
     </table>
 
 </div>
