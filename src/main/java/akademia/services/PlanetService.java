@@ -22,4 +22,8 @@ public class PlanetService {
         return planetRepository.getPlanetByName(name);
     }
 
+
+    public void deleteById(Long id){
+        planetRepository.deleteById(id);
+    }
 }
