@@ -17,4 +17,8 @@ public class PlanetService {
     public List<Planet> getAllPlanets() {
         return planetRepository.findAll();
     }
+
+    public List<Planet> getPlanetByName(String name){
+        return planetRepository.getPlanetByName(name);
+    }
 }
