@@ -5,7 +5,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 public class PlanetController {
-    private PlanetService planetService;
+    private final PlanetService planetService;
 
     public PlanetController(PlanetService planetService) {
         this.planetService = planetService;

@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 public class PlanetRestController {
-    private PlanetService planetService;
+    private final PlanetService planetService;
 
     public PlanetRestController(PlanetService planetService) {
         this.planetService = planetService;
