@@ -16,7 +16,7 @@ public class Planet {
     private String name;
 
     @Column
-    private String distance;
+    private Long distance;
 
     @Column
     private String description;
@@ -40,11 +40,11 @@ public class Planet {
         this.name = name;
     }
 
-    public String getDistance() {
+    public Long getDistance() {
         return distance;
     }
 
-    public void setDistance(String distance) {
+    public void setDistance(Long distance) {
         this.distance = distance;
     }
 
@@ -69,7 +69,7 @@ public class Planet {
         return "Planet{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", distance='" + distance + '\'' +
+                ", distance=" + distance +
                 ", description='" + description + '\'' +
                 ", photoUrl='" + photoUrl + '\'' +
                 '}';
